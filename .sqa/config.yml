@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/HPCI-Lab/yProv:
+      branch: main
+      repo: https://github.com/HPCI-Lab/yProv
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/HPCI-Lab/yProv git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-ecru-grouse.sh
+        container: qc.acc_slaphappy-cinnamon-argentino
+  QC.Doc:
+    repos:
+      github.com/HPCI-Lab/yProv find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sickly-wheat-wallaby.sh
+        container: qc.doc_pokey-lilac-squirrel
+      github.com/HPCI-Lab/yProv git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-charcoal-avocet.sh
+        container: qc.doc_silly-vermilion-oriole
+  QC.Lic:
+    repos:
+      github.com/HPCI-Lab/yProv licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-yellow-crocodile.sh
+        container: qc.lic_wiggy-viridian-jellyfish
+  QC.Ver:
+    repos:
+      github.com/HPCI-Lab/yProv get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-red-havanese.sh
+        container: qc.ver_stuffy-linen-uakari
+timeout: 5400
