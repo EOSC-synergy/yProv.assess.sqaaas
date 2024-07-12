@@ -5,13 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest&&
-    stop web&&
-    stop db&&
-    rm web&&
-    rm db&&
-    network rm yprov_net&&
-    volume rm neo4j_data&&
-    volume rm neo4j_logs&&
-    volume rm yprov_data
+    pytest
 )
