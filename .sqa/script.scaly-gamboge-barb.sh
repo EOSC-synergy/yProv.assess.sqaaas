@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest
+    /app/script_dockerfile.sh test
 )
