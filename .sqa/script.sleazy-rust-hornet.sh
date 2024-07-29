@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    mdl --json  .
+    python3 -m pytest -v
 )

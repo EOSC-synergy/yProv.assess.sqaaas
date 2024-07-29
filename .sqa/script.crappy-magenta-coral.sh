@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    /app/script_dockerfile.sh test
+    mdl --json .
 )
