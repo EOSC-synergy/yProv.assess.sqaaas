@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    pytest  --json-report  --json-report-indent 4
+    python3 -m pytest -v
 )
