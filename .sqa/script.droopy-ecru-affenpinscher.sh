@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/yProv &&
-    git rev-parse --is-inside-work-tree
+    licensee detect . --confidence 60 --json 
 )
