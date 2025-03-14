@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/HPCI-Lab/yProv:
       branch: main
-      repo: https://github.com/HPCI-Lab/yProv
+      repo: https://github.com/HPCI-Lab/yProv/
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/HPCI-Lab/yProv git:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-cream-avocet.sh
-        container: qc.acc_snazzy-cerulean-ibis
+        - /usr/bin/env sh .sqa/script.goopy-orchid-molly.sh
+        container: qc.acc_frumpy-wisteria-butterfly
   QC.Doc:
     repos:
       github.com/HPCI-Lab/yProv find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-black-wildebeest.sh
-        container: qc.doc_homey-champagne-mayfly
+        - /usr/bin/env sh .sqa/script.wimpy-firebrick-barracuda.sh
+        container: qc.doc_flabby-cobalt-tarsier
       github.com/HPCI-Lab/yProv git:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-saffron-shrimp.sh
-        container: qc.doc_greasy-buff-forest
+        - /usr/bin/env sh .sqa/script.pokey-pink-spider.sh
+        container: qc.doc_lumpy-olivine-gorilla
       github.com/HPCI-Lab/yProv markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-carmine-capuchin.sh
-        container: qc.doc_shaky-orchid-yak
+        - /usr/bin/env sh .sqa/script.whiny-aqua-ragdoll.sh
+        container: qc.doc_hasty-aqua-quoll
   QC.Lic:
     repos:
       github.com/HPCI-Lab/yProv licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-vermilion-stingray.sh
-        container: qc.lic_stuffy-salmon-ocelot
+        - /usr/bin/env sh .sqa/script.homely-firebrick-urchin.sh
+        container: qc.lic_squirrely-celadon-okapi
   QC.Met:
     repos:
       github.com/HPCI-Lab/yProv cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-chocolate-cat.sh
-        container: qc.met_sleepy-carmine-swan
+        - /usr/bin/env sh .sqa/script.homey-wisteria-bat.sh
+        container: qc.met_gamy-cardinal-hornet
       github.com/HPCI-Lab/yProv validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-razzmatazz-emu.sh
-        container: qc.met_lanky-amethyst-insect
+        - /usr/bin/env sh .sqa/script.queasy-chocolate-foxhound.sh
+        container: qc.met_seedy-chestnut-peccary
   QC.Sec:
     repos:
       github.com/HPCI-Lab/yProv bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-saffron-bloodhound.sh
-        container: qc.sec_sleepy-chocolate-wasp
+        - /usr/bin/env sh .sqa/script.woozy-taupe-camel.sh
+        container: qc.sec_flimsy-vermilion-chow
   QC.Sty:
     repos:
       github.com/HPCI-Lab/yProv flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-eggplant-buffalo.sh
-        container: qc.sty_cloudy-pear-wolverine
+        - /usr/bin/env sh .sqa/script.stuffy-zucchini-akbash.sh
+        container: qc.sty_cranky-magenta-butterfly
       github.com/HPCI-Lab/yProv hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-champagne-cougar.sh
-        container: qc.sty_tacky-rose-paradise
+        - /usr/bin/env sh .sqa/script.ugly-beige-macaque.sh
+        container: qc.sty_leaky-ecru-whale
       github.com/HPCI-Lab/yProv jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-ecru-insect.sh
-        container: qc.sty_craggy-platinum-mau
+        - /usr/bin/env sh .sqa/script.ready-linen-audemer.sh
+        container: qc.sty_jumpy-flax-rat
   QC.Uni:
     repos:
       github.com/HPCI-Lab/yProv pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-pumpkin-abyssinian.sh
-        container: qc.uni_skanky-blue-tapir
+        - /usr/bin/env sh .sqa/script.pasty-rose-moth.sh
+        container: qc.uni_cranky-dandelion-cheetah
   QC.Ver:
     repos:
       github.com/HPCI-Lab/yProv get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-bronze-chihuahua.sh
-        container: qc.ver_lanky-green-dane
+        - /usr/bin/env sh .sqa/script.scummy-periwinkle-iguana.sh
+        container: qc.ver_skimpy-myrtle-snail
 timeout: 5400
