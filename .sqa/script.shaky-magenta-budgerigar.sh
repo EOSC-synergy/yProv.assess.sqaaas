@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/HPCI-Lab/yprov &&
-    git rev-parse --is-inside-work-tree 
+cd github.com/HPCI-Lab/yProv &&
+    mdl --json  .
 )
