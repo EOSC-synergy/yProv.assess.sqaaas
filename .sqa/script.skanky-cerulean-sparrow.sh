@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/HPCI-Lab/yProv &&
-    find_doc_files.py --file_type all
+cd github.com/HPCI-Lab/yprov &&
+    pytest  --json-report  --json-report-indent 4
 )

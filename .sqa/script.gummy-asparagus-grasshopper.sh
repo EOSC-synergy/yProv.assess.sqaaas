@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/HPCI-Lab/yProv &&
-    flake8 .
+cd github.com/HPCI-Lab/yprov &&
+    cat codemeta.json
 )

@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/HPCI-Lab/yProv &&
-    cffconvert --validate 
+cd github.com/HPCI-Lab/yprov &&
+    jsonlint-cli "**/*.json"
 )
